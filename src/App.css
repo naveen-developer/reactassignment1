@@ -1,38 +1,70 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.maindiv {
+  width: auto;
+  height: auto;
+  background: #99c6d0;
+}
+
+h1 {
   text-align: center;
+  padding: 40px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parrentdiv {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.childdiv {
+  width: 400px;
+  height: 150px;
+  background: #ffffff;
+  display: flex;
+  padding: 6px;
+  border-radius: 8px;
+  margin: 20px 38px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.imgDiv img {
+  height: 100%;
+}
+.detailsDiv {
+  margin: 10px 20px;
+}
+.detailsDiv p {
+  margin: 10px 0;
+}
+.recordDiv {
+  width: 195px;
+  background: #8080802b;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  padding: 12px;
+  position: absolute;
+  bottom: 10px;
+}
+.recordDiv span {
+  font-weight: bold;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputDiv {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.inputDiv input {
+  width: 25rem;
+  padding: 10px;
+  font-size: 1.3rem;
 }
